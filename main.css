@@ -1,0 +1,60 @@
+#main{
+    background-color: #E0E0E2;
+    font-family: 'Catamaran', sans-serif;
+    display: grid;
+    grid-gap: 5px;
+}
+
+header{
+    /* background-color: #81D2C7; */
+    background-color:#d1d1d1;
+    
+    display: grid;
+
+    align-items: center;
+    justify-items: center;
+}
+
+section{
+    margin-top: 32px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 2px;
+}
+#img-div{
+    /* background-color:#B5BAD0; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 440px;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    /* can instead? */
+    /* max-width: 90vw; */
+    height: auto;   
+}
+#img-caption{
+    text-align: center;
+    font-size: 0.8em;
+}
+.text-content{
+    /* background-color: #7389AE; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 600px;
+
+}
+#tribute-info{
+    text-align: center;
+}
+
+footer{
+    background-color:#d1d1d1;
+    text-align: center;
+}
+
+
