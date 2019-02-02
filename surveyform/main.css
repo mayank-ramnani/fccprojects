@@ -1,0 +1,64 @@
+input[type="radio"]{
+    margin: 0;
+    margin-right: 4px;
+}
+
+.main{
+    /* max-width: 90vw; */
+    display: grid;
+    background-color: aliceblue;
+    justify-items: center;
+    font-family: 'Catamaran', sans-serif;
+}
+
+#survey-form {
+    background-color: #EFEFEF;
+    padding: 36px 36px 36px 36px;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-areas: "label1 input1";
+    margin-bottom: 12px;
+}
+
+.left {
+    grid-column: label1;
+    text-align: right;
+}
+
+.right{
+    grid-column: input1;
+}
+
+
+.radio{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.small{
+    font-size: 0.9em;
+}
+
+input[type="reset"], input[type="submit"]{
+    text-align: center;
+    width: 96px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #3da8fe;
+    color: white;
+}
+
+@media(max-width: 500px){
+    #survey-form{
+        grid-template-areas: label1;
+    }
+    .right{
+        grid-column: label1;
+    }
+    .left{
+        text-align: left;
+    }
+}
