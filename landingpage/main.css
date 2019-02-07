@@ -1,0 +1,158 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    background-color: #EEEEEE;
+    font-family: 'Segoe UI';
+}
+#header{
+    /* background-color: black; */
+}
+
+#nav-bar{
+    background-color: #EEEEEE;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+#nav-bar img{
+    height: 64px;
+    float: left;
+    margin-left: 32px;
+}
+
+#nav-bar ul{
+    float: right;
+}
+
+#nav-bar li{
+    list-style-type: none;
+    margin-right: 32px;
+    padding: 8px;
+    float: left;
+}
+
+.content{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features{
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+}
+
+input[type="email"]{
+    padding: 6px;
+}
+input[type="submit"], button{
+    background-color: gold;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pricing{
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.allpacks{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.package{
+    border: 1px solid rgba(36, 36, 36, 0.712);
+    width: 164px;
+    height: 228px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px 32px;
+}
+
+.package .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    height: 32px;
+}
+
+.package ul{
+    padding-inline-start: 0; /* browser default was non zero */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+.package li{
+    list-style-type: none;
+    font-size: 0.9em;
+}
+.package button{
+    /* background-color: red; */
+    height: 32px;
+    width: 100%;
+}
+
+.contact{
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.footer{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 16px;
+}
+
+.f_links li{
+    list-style-type: none;
+    float: left;
+    margin-right: 16px;
+}
+
+@media(max-width: 600px){
+    .allpacks{
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-bar ul{
+        float: none;
+    }
+}
+
+@media(max-width: 720px){
+    .features iframe{
+        width: 480px;
+        height: 280px;
+    }
+}
