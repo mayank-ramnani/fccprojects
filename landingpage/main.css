@@ -5,7 +5,10 @@ a{
 
 html{
     background-color: #EEEEEE;
+    /* background-color: black; */
     font-family: 'Segoe UI';
+    scroll-behavior: smooth;
+    
 }
 #header{
     /* background-color: black; */
@@ -41,6 +44,8 @@ html{
     margin-top: 32px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+
 }
 
 .features{
@@ -132,6 +137,7 @@ input[type="submit"], button{
     display: flex;
     flex-direction: row-reverse;
     padding: 16px;
+    /* width: 100%; */
 }
 
 .f_links li{
@@ -145,8 +151,21 @@ input[type="submit"], button{
         flex-direction: column;
         align-items: center;
     }
+    #nav-bar a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     #nav-bar ul{
-        float: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .content{
+        margin-top: 92px;
+    }
+    .package{
+        width: 60%;
     }
 }
 
