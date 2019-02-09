@@ -1,0 +1,120 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+}
+
+.main-section header{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+img{
+    max-width: 500px;
+    width: 70%;
+    height: auto;
+    margin-left: 32px;
+    /* padding-left: 64px; */
+    /* padding-right: 64px; */
+}
+
+pre{
+    background-color: #d3d3d3;
+    overflow: auto;
+}
+
+h3{
+    background-color: gray;
+
+}
+
+body{
+    /* background-color: lightblue; */
+    margin: 0;
+}
+
+
+/* .full-height{
+    height: 100%;
+    position: fixed;
+} */
+
+#navbar{
+    /* background-color: #f1f1f1; */
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid gray;
+    position: fixed;
+    /* padding: 24px; */
+    /* padding-left: 0; */
+    overflow: auto;
+}
+
+#navbar header{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#navbar ul{
+    padding-inline-start: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: gray;
+}
+
+#navbar li{
+    /* width: 100%; */
+    border-top: 1px solid black;
+    /* margin-inline-start: 0; */
+    padding-inline-start: 32px;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8em;
+}
+
+#navbar ul:last-child{
+    border-bottom: 1px solid black;
+}
+
+#navbar li:hover{
+    background-color: rgb(76, 211, 80);
+    color: white;
+}
+
+#main-doc{
+    padding-left: 25%;
+    padding-right: 24px;
+}
+
+.main-section{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px black solid; */
+    padding: 16px;
+}
+
+.main-section p{
+    color: rgb(61, 61, 61);
+    text-align: left;    
+}
+
+@media(max-width: 800px){ 
+    #navbar{
+        width: calc(100%);
+        height: auto;
+        position: relative;
+        border-right: none;
+    }
+   
+    #main-doc{
+        padding-left: 24px;
+    }
+
+}

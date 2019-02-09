@@ -1,0 +1,12 @@
+display: flex makes sure the element takes up full height of the parent, not really. align-items stretch might do that.
+justify-content: center; aligns all flex items to center inside the container, main axis.
+align-items: center; cross axis., stretch and baseline are options.
+flex-wrap property, it tells CSS to wrap items. This means extra items move into a new row or column.
+
+for the flex items:
+flex-shrink:  it allows an item to shrink if the flex container is too small. The higher the number, the more it will shrink compared to the other items in the container.
+flex-grow: controls the size of items when the parent container expands.
+The flex-basis property specifies the initial size of the item before CSS makes adjustments with flex-shrink or flex-grow.
+flex: flex-grow, flex-shrink, and flex-basis.
+order to order elements manually.
+align-self
