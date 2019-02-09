@@ -1,0 +1,30 @@
+display grid
+grid-template-columns : structure of grid
+grid-template-rows
+
+fr	fraction of other total fractions,
+auto	wide as content,
+em	relative unit,
+%	of container.
+
+grid-gap: grid-row-gap grid-column-gap;
+
+_________
+for items of the grid:
+grid-row grid-column for spanning the item.
+justify-self for "content" position inside the grid box horizontally
+align-self vertical content alignment
+justify-items and align-items for all items in the container
+
+grid-template-areas for custom named template areas, word is cell and inside quote marks is a row, "." for empty cell.
+can reference above names in the grid-area property.
+can also use line numbers in the grid area to create an area on the fly if not previously specified: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+
+repeat function to specify the number of times you want your column or row to be repeated
+minmax functon to specify range of row/col if size of container changes.
+flexible layout with auto-fill inside repeat with minmax, keep inserting col of min size and then stretch it until max or until it can insert another col of min size.
+auto-fit is like auto-fill, just collapses empty columns.
+
+@media queries for responsive design, combine with grid-template-areas
+
+can have grids inside grids.

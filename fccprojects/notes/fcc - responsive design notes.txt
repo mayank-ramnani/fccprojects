@@ -1,0 +1,4 @@
+viewport units in font for responsive typography:
+vw, vh, vmin, vmax
+media queries for responsive design.
+display block, max-width 100%, height auto for responsive images.
